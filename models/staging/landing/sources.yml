@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: "USUARIO"
+    schema: "COCHE"
+    description: "USUARIOS"
+    database: "USER"
+    
+    tables:  
+      - name: usuario_normal
+        description: "Tabla que muestra la lista de clientes"
+        columns:
+          - name: nombre
+            description: "Nombre del usuario"
+            tests:
+              - not_null
+
+          - name: apellidos
+            description: "Apellidos del usuario"
+
+          - name: edad
+            description: "Edad de los usuarios"

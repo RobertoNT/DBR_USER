@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: usuarios
+    description: "Tabla que muestra la lista de clientes"
+    columns:
+      - name: nombre
+        description: "Nombre del usuario"
+        tests:
+          - not_null
+
+      - name: apellidos
+        description: "Apellidos del usuario"
+
+      - name: edad
+        description: "Edad de los usuarios"
